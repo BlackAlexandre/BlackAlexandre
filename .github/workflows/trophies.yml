@@ -20,10 +20,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate Trophy SVG
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        uses: soulteary/github-profile-trophy-action@v1.0.0
         with:
-          username: ${{ github.repository_owner }}
-          output_path: trophy.svg
+          options: "username=${{ github.repository_owner }}&theme=algolia&column=7&margin-w=8&margin-h=8&no-bg=true&no-frame=true"
+          path: trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Save Trophy SVG
