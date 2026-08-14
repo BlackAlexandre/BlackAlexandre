@@ -230,8 +230,7 @@ blackalexandre@neural-core:~$ _
 
 <div align="center">
 
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=BlackAlexandre&theme=algolia&no-frame=true&no-bg=true&margin-w=8&margin-h=8&column=7" alt="Troféus do GitHub" />
-
+<img width="100%" src="./trophy.svg" alt="Troféus do GitHub" />
 </div>
 
 <br>
