@@ -22,7 +22,7 @@ jobs:
       - name: Generate Trophy SVG
         uses: soulteary/github-profile-trophy-action@v1.0.0
         with:
-          options: "username=${{ github.repository_owner }}&theme=algolia&column=7&margin-w=8&margin-h=8&no-bg=true&no-frame=true"
+          options: "username=${{ github.repository_owner }}&theme=algolia&column=7&margin-w=8&margin-h=8&no-bg=true&no-frame=true&rank=-?"
           path: trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
