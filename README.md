@@ -216,7 +216,7 @@ blackalexandre@neural-core:~$ _
 
 <br><br>
 
-<img width="70%" src="https://streak-stats.demolab.com?user=BlackAlexandre&hide_border=true&background=020617&stroke=1E3A8A&ring=22D3EE&fire=A855F7&currStreakNum=E0F2FE&sideNums=C4B5FD&currStreakLabel=22D3EE&sideLabels=8B5CF6&dates=64748B&locale=pt_BR" alt="Sequência de contribuições" />
+<img width="70%" src="./streak.svg" alt="Sequência de contribuições" />
 
 <br><br>
 
