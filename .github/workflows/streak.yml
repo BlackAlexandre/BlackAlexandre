@@ -1,0 +1,36 @@
+name: Update GitHub Streak
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/streak.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Streak SVG
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: >-
+            user=${{ github.repository_owner }}&hide_border=true&background=020617&stroke=1E3A8A&ring=22D3EE&fire=A855F7&currStreakNum=E0F2FE&sideNums=C4B5FD&currStreakLabel=22D3EE&sideLabels=8B5CF6&dates=64748B&locale=pt_BR
+          path: streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Save Streak SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add streak.svg
+          git commit -m "Update GitHub streak" || exit 0
+          git push
