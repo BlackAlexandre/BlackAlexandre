@@ -228,12 +228,9 @@ blackalexandre@neural-core:~$ _
 
 ## GITHUB TROPHIES
 
-<div align="center">
-
-<img width="100%" src="./trophy.svg" alt="Troféus do GitHub" />
-</div>
-
-<br>
+<p align="center">
+  <img width="100%" src="./trophy.svg" alt="Troféus do GitHub" />
+</p>
 
 ## CONTRIBUTION PROTOCOL
 
